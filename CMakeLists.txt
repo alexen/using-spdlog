@@ -6,6 +6,8 @@ project(using_spdlog
      LANGUAGES CXX
 )
 
+add_subdirectory(3rdparty/spdlog)
+
 add_executable(${PROJECT_NAME} main.cpp)
 target_compile_options(
      ${PROJECT_NAME}
